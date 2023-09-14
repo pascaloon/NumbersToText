@@ -1,0 +1,37 @@
+﻿@inject FrenchTranslator FrenchTranslatorService
+@inject EnglishTranslator EnglishTranslatorService
+
+<MudNumericField ValueChanged="(double newValue) => UpdateAndTranslateUserValue(newValue)" Immediate="true" Label=" Number:" Min="0.0" Max="999999999999.999999999999" Class="my-4" Clearable />
+
+
+<div class="my-4">
+    <MudText>Français:</MudText>
+     <MudPaper Class="border-solid border-2 pa-2">@FrenchText</MudPaper>
+</div>
+<div class="my-4">
+    <MudText>English:</MudText>
+     <MudPaper Class="border-solid border-2 pa-2">@EnglishText</MudPaper>
+</div>
+
+ @code {
+    public double UserValue { get; set; } = 0f;
+    public string FrenchText { get; set; } = string.Empty;
+    public string EnglishText { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        TranslateUserValue();
+    }
+
+    private void UpdateAndTranslateUserValue(double newValue)
+    {
+        UserValue = newValue;
+        TranslateUserValue();
+    }
+
+    private void TranslateUserValue()
+    {
+        FrenchText = FrenchTranslatorService.Translate(UserValue);
+        EnglishText = EnglishTranslatorService.Translate(UserValue);
+    }
+}

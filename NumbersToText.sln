@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersToText", "NumbersToText\NumbersToText.csproj", "{98EABA1B-FCB5-4965-86CE-8BBDAAC13505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumbersToText.Tests", "NumbersToText.Tests\NumbersToText.Tests.csproj", "{9B548918-CB19-4B9B-9808-C9CB830F9A64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98EABA1B-FCB5-4965-86CE-8BBDAAC13505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EABA1B-FCB5-4965-86CE-8BBDAAC13505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EABA1B-FCB5-4965-86CE-8BBDAAC13505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EABA1B-FCB5-4965-86CE-8BBDAAC13505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B548918-CB19-4B9B-9808-C9CB830F9A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B548918-CB19-4B9B-9808-C9CB830F9A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B548918-CB19-4B9B-9808-C9CB830F9A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B548918-CB19-4B9B-9808-C9CB830F9A64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D8F1CBB-C337-4B74-B414-260A5BFE508A}
+	EndGlobalSection
+EndGlobal
