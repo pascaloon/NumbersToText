@@ -122,9 +122,22 @@ namespace NumbersToText
             41 => "quarante-et-un",
             51 => "cinquante-et-un",
             61 => "soixante-et-un",
-            71 => "soixante-onze",
             81 => "quatre-vingt-un",
+
+            71 => "soixante-onze",
+            72 => "soixante-douze",
+            73 => "soixante-treize",
+            74 => "soixante-quatorze",
+            75 => "soixante-quinze",
+            76 => "soixante-seize",
+            
             91 => "quatre-vingt-onze",
+            92 => "quatre-vingt-douze",
+            93 => "quatre-vingt-seize",
+            94 => "quatre-vingt-quatorze",
+            95 => "quatre-vingt-quinze",
+            96 => "quatre-vingt-seize",
+
 
             _ => null
         };

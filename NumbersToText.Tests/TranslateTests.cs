@@ -10,6 +10,7 @@ namespace NumbersToText.Tests
             Assert.Equal("cent", t.Translate(100f));
             Assert.Equal("mille", t.Translate(1_000f));
             Assert.Equal("un million", t.Translate(1_000_000f));
+
         }
 
         [Fact]
@@ -19,6 +20,9 @@ namespace NumbersToText.Tests
             Assert.Equal("cent un", t.Translate(101));
             Assert.Equal("cent onze", t.Translate(111));
             Assert.Equal("cent vingt-trois", t.Translate(123f));
+            Assert.Equal("cent soixante-quinze", t.Translate(175));
+            Assert.Equal("cent quatre-vingt-seize", t.Translate(196));
+
         }
 
         [Fact]
